@@ -1,0 +1,2 @@
+module YamlLocalesJsonizer::Styles
+end
