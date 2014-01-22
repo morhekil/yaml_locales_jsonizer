@@ -1,0 +1,4 @@
+<%
+  locales = YamlLocalesJsonizer::Loader.locales
+%>
+window.yaml_locales_jsonized = <%= locales.to_json %>;
