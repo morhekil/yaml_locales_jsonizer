@@ -12,4 +12,18 @@ describe YamlLocalesJsonizer::Loader, '.locales' do
       ru: { translation: locale_ru }
     })
   end
+
+  context 'with only_files config parameters specified' do
+    before do
+      YamlLocalesJsonizer.configure do
+        only_files %w(en.yml)
+      end
+    end
+
+    it 'loads en locale only' do
+      expect(load_locales).to eq ({
+        en: { translation: locale_en }
+      })
+    end
+  end
 end

@@ -6,8 +6,11 @@ shared_context 'locale files' do
   end
 
   before do
-    allow(YamlLocalesJsonizer::Loader).to receive(:locale_files)
-      .and_return(locale_files.keys)
+    # add fake data files to load path
+    fs = locale_files.keys
+    YamlLocalesJsonizer.configure { self.load_path += fs }
+
+    # and stub YAML to 'load' them
     allow(YAML).to receive(:load_file) { |file| locale_files[file] }
   end
 end

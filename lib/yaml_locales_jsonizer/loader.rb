@@ -17,7 +17,10 @@ module YamlLocalesJsonizer::Loader
   private
 
   def locale_files
-    %w(en.yml ru.yml).map { |name| Rails.root + "config/locales/#{name}" }
+    cfg = YamlLocalesJsonizer
+    cfg.load_path.select do |f|
+      cfg.only_files.find { |m| File.fnmatch?(m, f) || File.basename(f) == m }
+    end
   end
 
   def style
