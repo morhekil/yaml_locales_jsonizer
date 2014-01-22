@@ -14,7 +14,7 @@ describe YamlLocalesJsonizer::ActionView::Helper, '#yaml_locales_jsonizer' do
   it 'generates json data' do
     json_data = ActiveSupport::JSON.encode YamlLocalesJsonizer::Loader.locales
     expect(yaml_locales_jsonizer).to eq javascript_tag(
-      "window.locales = #{j json_data}"
+      "window.yaml_locales_jsonized = #{json_data}"
     )
   end
 end
