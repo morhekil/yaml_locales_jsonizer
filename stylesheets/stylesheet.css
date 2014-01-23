@@ -66,6 +66,7 @@ a:hover {
 header {
   padding-top: 35px;
   padding-bottom: 25px;
+  text-align: center;
 }
 
 header h1 {
@@ -99,7 +100,14 @@ header h2 {
 }
 
 #downloads {
+  text-align: center;
+  width: 448px;
+  margin: 0 auto 20px auto;
+}
+
+#gemdata {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 a.button {
@@ -117,7 +125,7 @@ a.button {
   padding: 12px 8px 12px 8px;
   display: block;
   float: left;
-  width: 179px;
+  width: 199px;
   margin-right: 14px;  
   background: #fdfdfd; /* Old browsers */
   background: -moz-linear-gradient(top,  #fdfdfd 0%, #f2f2f2 100%); /* FF3.6+ */
@@ -157,6 +165,9 @@ a.button span {
 }
 #download-tar-gz span {
   background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
+}
+#download-gem span {
+  background: transparent url(../images/ruby-icon.png) 12px 50% no-repeat;
 }
 #view-on-github span {
   background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
