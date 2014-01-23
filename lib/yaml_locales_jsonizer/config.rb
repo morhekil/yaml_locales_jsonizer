@@ -2,7 +2,7 @@ module YamlLocalesJsonizer::Config
   attr_accessor :config
 
   DEFAULTS = {
-    load_path: (defined?(Rails) && Rails.configuration.i18n[:load_path]) || [],
+    load_path: nil,
     only_files: ['*.yml']
   }
 
