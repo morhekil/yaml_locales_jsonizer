@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = YamlLocalesJsonizer::VERSION
   spec.authors       = ['Oleg Ivanov']
   spec.email         = ['morhekil@morhekil.net']
-  spec.description   = %q{Simple generation of JSON data for the frontend based on Rails-style YAML locales}
-  spec.summary       = %q{Simple generation of JSON data for the frontend based on Rails-style YAML locales}
+  spec.description   = %q{Simple generation of JSON data for a frontend from Rails-style YAML locales}
+  spec.summary       = %q{Simple generation of JSON data for a frontend from Rails-style YAML locales}
   spec.homepage      = ''
   spec.license       = 'MIT'
 
