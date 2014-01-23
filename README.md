@@ -1,6 +1,6 @@
 # YamlLocalesJsonizer
 
-Simple generation of JSON i18n data for the frontend based on Rails-style YAML
+Simple generation of JSON i18n data for a frontend from Rails-style YAML
 locales.
 
 The gem provides the following:
