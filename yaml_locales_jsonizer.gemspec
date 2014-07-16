@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
 
-  spec.add_runtime_dependency 'actionpack', '~> 3.0'
-  spec.add_runtime_dependency 'activesupport', '~> 3.0'
+  spec.add_runtime_dependency 'actionpack'
+  spec.add_runtime_dependency 'activesupport'
 end
